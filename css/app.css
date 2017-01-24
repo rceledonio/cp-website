@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding:0;
+	margin:0;
+	color:#acdd4a;
+	background-color: #000000;
+	overflow:hidden;
+	font:14px/1.4em "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+}
+hr{border: 1px solid #444;}
+a{text-decoration: none;}
+ul{list-style: none;}
+
+#ovan-logo{
+	background-image:url('../images/logo.png');
+	position:absolute;
+	top:0;
+	left:0;
+	height:150px;
+	width:143px;
+	z-index:99;
+	cursor:pointer;
+}
+#ovan-logo:hover{ top:-3px }
+
+#ovan-user-info{position:absolute; top:25px; right:150px;font-size: 10px}
+
+#ovan-port-view-table,
+#ovan-port-view-body,
+#ovan-port-view{
+	height:100%;
+	width:100%;
+}
+#ovan-main-body{position: fixed;top: 0;left: 0;right: 0;bottom: 40px}
+
+#ovan-main-top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 16px;
+	z-index: 106;
+}
+
+#ovan-main-body a{
+	color:#126499;
+	cursor:pointer;
+}
+.ovan-title{
+	font-weight: bold;
+	font-size:18px;
+}
+#ovan-top-subtitle{
+	position:absolute;
+	right:0;
+	top:10px;
+	color:yellow;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+}
+
+.giv-hide{display: none}
+
+/* CSS Tool top menu */
+#ovan-tool-top-menu{
+	display:block;
+	height:20px;
+	right:0;
+	position:absolute;
+	font-size:16px;
+	font-weight:bold;
+    padding: 4px;
+	background-image: url("../images/transp.png");
+}
+#ovan-tool-top-menu ul{
+	float:right;
+	margin-top:0;
+	list-style:none outside none;
+}
+#ovan-tool-top-menu li{
+	float:left;
+	height:15px;
+	margin:0 3px;
+	padding:0 8px;
+	cursor:pointer;
+}
+#ovan-tool-top-menu li a{
+	/*color:#FFFFFF;*/
+	text-decoration:none;
+}
+#ovan-tool-top-menu li:hover{
+	text-decoration:underline;
+	color:#ffffe0;
+}
+/* main bottom */
+.ovan-main-bottom{
+	width:100%;
+	border-top:1px solid #8b0000;
+	/*background-color:#ededed;*/
+	padding:4px;
+	font-size:11px;
+	line-height: 14px;
+	background: url("images/ui-bg_gloss-wave_20_1c160d_500x100.png") repeat-x scroll 50% 50% #1C160D;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+.ovan-main-bottom b{
+	color: #000000;
+}
+.ovan-main-bottom a{
+	text-decoration:none;
+	color:#FFF;
+	cursor:pointer;
+	margin:0px;
+	padding:0px;
+}
+.ovan-main-bottom a:hover{
+	text-decoration:underline;
+}
+#ovan-copyright-bar{color: #888; background-color: #000; padding:1px  30px}
+.ovan-text-button{padding: 6px;}
+.ovan-text-button:hover{text-decoration: none!important;color: #000000!important;}
+
+
+/* CSS content */
+.ovan-page-title{
+	font-size:22px;
+	color: #314E64;
+	font-family: "klavika-web-1","klavika-web-2",sans-serif;
+	font-weight: bold;
+	display:block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ovan-page-title em{
+	font-size:26px;
+	color: #126499;
+	font-style: normal;
+}
+
+/* CSS forms */
+.ovan-info-cont b{color: #0972a5}
+.ovan-info-cont a{color: #26b3f7!important;}
+.ovan-form-panel{
+	width:345px;
+	margin-left:6px;
+	padding:8px;
+}
+label.error{color:#FF5050;white-space: nowrap;}
+.ovan-require-field{
+	color:#CC0000;
+	font-weight: bold;
+}
+input, select, textarea{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border:1px #CCCCCC solid;
+	padding:3px;
+	background-color:#ededed;
+	width:220px;
+}
+input:hover, select:hover, textarea:hover{
+	background-color:#FFFFFF;
+}
+input:focus, select:focus, textarea:focus{
+	background-color:#FFFFDD;
+}
+
+.giv-fb-credits span{float: left; font-size: 14px}
+.giv-fb-credits img{vertical-align: middle;}
+.giv-fb-credits,
+.giv-fb-comm-count{display: block; width: 100%;)}
+.giv-fb-comm-count{background-color: rgba(199,197,196,0.2); color: #000000;)}
+.giv-fb-credits{background-color: rgba(0,123,252,0.2); color: #ffffe0; text-align: right; font-size: 10px; padding:0 2px)}
+.giv-fb-table{width: 300px; border-top: 1px solid #808080; border-collapse:collapse;line-height:94%; font-size: 13px}
+.giv-fb-table tr td{border-bottom: 1px solid #808080}
+.giv-fb-table textarea{height: 25px; width: 256px}
+.giv-fb-table span{color: #a9a9a9;}
+.giv-fb-table b{color: #add8e6;}

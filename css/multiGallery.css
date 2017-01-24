@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/* component holder */
+#componentWrapper{
+	position:absolute;
+	top:0px;	
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+/* playlist holder (hidden) */
+#componentWrapper .componentPlaylist{
+	display:none;
+}
+
+/* slideshow controls */
+#componentWrapper .slideshow_controls{
+	position:absolute;
+	width:100px;
+	height:30px;
+	top:28px;
+	right:5px;
+	/*background:red;*/
+	display:none;
+}
+#componentWrapper .controls_prev, .controls_toggle, .controls_next{
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:0px;
+}
+#componentWrapper .controls_prev{
+	left:0px;
+}
+#componentWrapper .controls_toggle{
+	left:33px;
+}
+#componentWrapper .controls_next{
+	left:66px;
+}
+
+/* data_controls */
+#componentWrapper .data_controls{
+	position:absolute;
+	width:70px;
+	height:30px;
+	bottom:10px;
+	right:10px;
+}
+
+/* link */
+#componentWrapper .link_toggle{
+	position:relative;
+	width:30px;
+	height:30px;
+	top:0px;
+	right:0px;
+	float:right;
+	display:none;
+}
+
+/* description */
+#componentWrapper .info_toggle{
+	position:relative;
+	width:30px;
+	height:30px;
+	top:0px;
+	right:0px;
+	float:right;
+	margin-left:10px;
+	display:none;
+}
+
+#componentWrapper .info_holder{
+	position:absolute;
+	bottom:40px;
+	right:10px;
+	
+	color:#e5e5e5;
+	padding: 10px 20px 15px 20px;
+	
+	/* http://www.google.com/webfonts */
+	font-family: 'Terminal Dosis', sans-serif;
+	
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+				
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+	display:none;
+}
+#componentWrapper .info_holder a{
+	color:#ACDD4A;
+	text-decoration:underline;
+}
+#componentWrapper .info_holder a:hover, a:active{
+	text-decoration:underline;
+}
+
+/* playlist toggle */
+#componentWrapper .playlist_toggle{
+	position:absolute;
+	width:30px;
+	height:30px;
+	display:none;
+}
+
+/* menu. You can change font color, font-family or font-size here. */
+#componentWrapper .menu_item{
+	position:absolute;
+	/*background:#9a6;*/
+	color:#fff;
+	/* http://www.google.com/webfonts */
+	/*font-family: 'Terminal Dosis', sans-serif;*/
+	font-size:24px;
+	text-shadow: 0px 2px 3px #444;
+	letter-spacing:2px;
+}
+
+/* preloader */
+#componentWrapper .componentPreloader{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-25px 0px 0px -25px;
+	background:#000 url('../data/loader.gif') no-repeat center center;
+	width:50px;
+	height:50px;
+	z-index:999;
+	opacity:0.7;
+}
+#publicFunctions{
+	position:absolute;
+	top:50px;
+	left:50px;
+	z-index:99999;
+	background:#ccc;
+	padding:20px;
+	display:none;
+}
+#publicFunctions li{
+	text-decoration:none;	
+	list-style: none;
+}
+#publicFunctions li a{
+	color:white;
+}
+#publicFunctions p{
+	color:white;
+}
+
+/* font calculations */
+#componentWrapper .fontMeasure{
+	visibility:hidden;
+}

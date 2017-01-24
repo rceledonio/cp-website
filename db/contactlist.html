@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+	<title>Contact Info</title>
+
+	<link href="main.css" rel="stylesheet" />
+	<link rel="stylesheet" href="form.css" />
+	<script src="modernizr-2.js"></script>
+	<script type="text/javascript">
+	<!--
+	function validform(theform) {
+	
+		var num = 1
+		var errorsfound = false;
+		var theerrors = "Errores en lo siguiente:\n\n";
+		var patt = new RegExp(); // to hold your Regular Expression Pattern
+
+		// check s_fname for required
+		if (theform.fullname.value.length < 1) {
+			// error !!!
+			theerrors = theerrors + num + ". NOMBRE: su nombre completo es requerido\n";
+			num++;
+			errorsfound = true;
+		}
+		
+		if (theform.phone.value.length > 0) {
+			patt = /^\d{3}\-\d{3}\-\d{4}$/
+			if (!patt.test(theform.phone.value)) {
+				// error !!!
+				theerrors = theerrors + num + ". TELEFONO: el telefono debe de ser en formato (###)###-####\n";
+				num++;
+				errorsfound = true;
+				
+			}
+		}
+		
+		if (theform.email.value.length > 0) {
+			patt = /\w+@\w+\.\w+/
+			if (!patt.test(theform.email.value)) {
+				theerrors = theerrors + num + ". EMAIL: Tiene que poner un correo electronico valido\n";
+				num++;
+				errorsfound = true;
+			}
+		}
+		
+		//check group selected for required
+		if (theform.grupo.selectedIndex == 0) {
+			// error !!!
+			theerrors = theerrors + num + ". GRUPO: el nombre de su grupo es requerido\n";
+			errorsfound = true;
+		}
+		
+		//did we find errors??
+		if (errorsfound) {
+			//found errors - do not submit
+			alert(theerrors);
+			return false;
+		}
+		
+		// good to go
+		return true;
+	}
+	// -->
+	</script>
+</head>
+
+<body>
+	<header>
+		<hgroup>
+			<h1>Comite Pro Bolivia</h1><br \><br \>
+			<h2>Informacion de Contacto</h2>
+		</hgroup>
+	</header>
+
+	<section id="content">
+		<article id="contact">
+			<section class="contact">
+				<h2>Por favor llenar este formulario para poner al dia la lista de contactos de la mesa directiva del Comite Pro Bolivia 2013....<br /><br />Muchas Gracias - Roger Celedonio (Webmaster)</h2>
+
+				<form name="frmContact" id="frmContact" action="#" onsubmit="return validform(this);">
+					<label for="name">Nombre Completo:</label>
+					<input type="text" name="fullname" id="fullname" tabindex="10" placeholder="nombre y apellido" required>
+					
+					<label for="phone">Telefono (###) ### - ####</label>
+					<input type="tel" name="phone" id="phone" tabindex="20" placeholder="numero de telefono">
+					
+					<label for="email">Correo Electronico</label>
+					<input type="email" name="email" id="email" tabindex="30" placeholder="correo electronico">
+					
+					<label>Grupo</label>
+					<select name="grupo" id="grupo">
+						<option title="noselection" id="noselection" selected disabled>--Seleccione su Grupo--</option>
+						<option>Alma Boliviana</option>
+						<option>Bolivia Andina</option>
+						<option>Caporales San Simon VA USA</option>
+						<option>Centro Cultural Bolivia</option>
+						<option>Embajadores del Folklor</option>
+						<option>FC Pachamama</option>
+						<option>FCC Ruphay</option>
+						<option>FFCC Universitarios San Simon</option>
+						<option>FSCB Diablada</option>
+						<option>Morenada 14 de Septiembre</option>
+						<option>Sangre Boliviana</option>
+						<option>Tinkus Tiataco</option>
+						<option>Tradiciones Bolivianas</option>
+					</select>
+					
+					<input type="submit" value="Someter...">
+				</form>
+			</section>
+		</article>
+	</section>
+</body>
+</html>
